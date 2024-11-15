@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moschino Acceuil</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,69 +36,52 @@
 
         <div>
             <nav id="mainMenu">
-                <div>
-                    <i class="fa-solid fa-bars" id="burger"></i>
-                </div>
+                <i class="fa-solid fa-bars" id="burger"></i>
                 <ul>
-                    <li><a href="#"><strong  class="selected">Home</strong></a></li>
+                    <li><a href="index.html"><strong>Home</strong></a></li>
                     <li><a href="#"><strong>About</strong></a></li>
                     <li><a href="#"><strong>Shop</strong></a></li>
                     <li><a href="#"><strong>Blog</strong></a></li>
-                    <li><a href="contact.html"><strong>Contact</strong></a></li>
+                    <li><a href="#"><strong   class="selected">Contact</strong></a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <main>
+        <section id="contact" class="container">
+            <section class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.527297519884!2d2.3240912768671813!3d48.86722370008426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f4692f8023f%3A0xb3e859d7b6f42f0f!2sMoschino!5e0!3m2!1sfr!2sfr!4v1731660914108!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
 
-    <main class="container">
-        <section id="projects">
-            <div class="photoRow">
-                <figure>
-                    <img src="images-mode/01.jpg" alt="01">
-                    <h3>Sunset Beach</h3>
-                    <figcaption><p>été / femme / jaune</p></figcaption>
-                </figure>
-                <figure>
-                    <img src="images-mode/02.jpg" alt="02">
-                    <h3>Earl Of Moreland</h3>
-                    <figcaption><p></p>chapeau / femme / jaune</p></figcaption>
-                </figure>
-                <figure>
-                    <img src="images-mode/03.jpg"alt="03">
-                    <h3>Eliza And John</h3>
-                    <figcaption><p></p>été / femme / jaune</p></figcaption>
-                </figure>
-            </div>
+            <section  class="contactInfo">
+                <div class="left">
+                    <h4>Nous Ecrire</h4>
+                    <form action="sendmail.php" method="get">
+                        <p><label for="nom">Nom</label><input type="text" name="nom" placeholder="Nom"></p>
+                        
+                        <p><label for="email">Email</label><input type="email" name="email" placeholder="Email"></p>
+                        
+                        <p><label for="message">Message</label><textarea name="message" placeholder="Votre message..." rows="3"></textarea></p>
+                        <p><input type="submit" value="Envoyer"></p>
+                    </form>
+                </div>
 
-            <div class="photoRow">
-                <figure>
-                    <img src="images-mode/04.jpg" alt="04">
-                    <h3>Hot Afternoon</h3>
-                    <figcaption><p>rose / femme / jaune</p></figcaption>   
-                </figure>
-                <figure>
-                    <img src="images-mode/05.jpg" alt="05">
-                    <h3>Long Walks</h3>
-                    <figcaption><p>chapeau / été / jaune</p></figcaption>
-                </figure>
-                <figure>
-                    <img src="images-mode/06.jpg" alt="06">
-                    <h3>Twilight</h3>
-                    <figcaption><p></p>chapeau / femme / été</p></figcaption>
-                </figure>
-            </div>
+                <div class="right">
+                    <h4>Nous Trouver</h4>
+                    <p>255 rue Saint-Honoré</p>
+                    <p>75001 Paris</p>
+                    <p>Tel: (+33) 1 252 389 3571</p>
+                    <br>
+                    <p>Lundi - Vendredi: 9:00 à 18:00</p>
+                    <p>Samedi: 10:00 à 20:00</p>
+                    <p>Dimanche: Fermé</p>
+                </div>
+                
+            </section>
 
-            <div class="container">
-                <ul id="photoNavigation">
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">Suite ⋙</a></li>
-                </ul>
-            </div>
         </section>
     </main>
-
 
     <footer class="container">
         <section class="promo">
