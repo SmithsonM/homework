@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moschino Acceuil</title>
+    <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="lightbox.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -51,20 +54,40 @@
 
 
     <main class="container">
+            <div class="slider-wrapper theme-default container" >
+                <div id="slider" class="nivoSlider">
+                    <a href="#"><img src="images/slider1.jpg"  alt="photo 1" title="htmlcaption1"/></a>
+                    <a href="#"><img src="images/slider2.jpg"  alt="photo 2" title="htmlcaption2"/></a>
+                    <a href="#"><img src="images/slider3.jpg"  alt="photo 3" title="htmlcaption3"/></a>
+                </div>
+                <div id="htmlcaption1" class="nivo-html-caption">
+                    <h2>SUMMER TIME</h2>
+                    <h3>Find the shade.</h3> 
+                    <i class="fa-solid fa-hat-cowboy"></i>
+                </div>
+                <div id="htmlcaption2" class="nivo-html-caption">
+                    <strong>2</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+                </div>
+                <div id="htmlcaption3" class="nivo-html-caption">
+                    <strong>3</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+                </div>
+            </div>
+
+
         <section id="projects">
             <div class="photoRow">
                 <figure>
-                    <img src="images-mode/01.jpg" alt="01">
+                    <a class="example-image-link" href="images/01.jpg" data-lightbox="example-set"><img class="example-image" src="images/01.jpg" alt="01"/></a>
                     <h3>Sunset Beach</h3>
                     <figcaption><p>été / femme / jaune</p></figcaption>
                 </figure>
                 <figure>
-                    <img src="images-mode/02.jpg" alt="02">
+                    <a class="example-image-link" href="images/02.jpg" data-lightbox="example-set"><img class="example-image" src="images/02.jpg" alt="02"/></a>
                     <h3>Earl Of Moreland</h3>
                     <figcaption><p></p>chapeau / femme / jaune</p></figcaption>
                 </figure>
                 <figure>
-                    <img src="images-mode/03.jpg"alt="03">
+                    <a class="example-image-link" href="images/03.jpg" data-lightbox="example-set"><img class="example-image" src="images/03.jpg" alt="03"/></a>
                     <h3>Eliza And John</h3>
                     <figcaption><p></p>été / femme / jaune</p></figcaption>
                 </figure>
@@ -72,17 +95,17 @@
 
             <div class="photoRow">
                 <figure>
-                    <img src="images-mode/04.jpg" alt="04">
+                    <a class="example-image-link" href="images/04.jpg" data-lightbox="example-set"><img class="example-image" src="images/04.jpg" alt="04"/></a>
                     <h3>Hot Afternoon</h3>
                     <figcaption><p>rose / femme / jaune</p></figcaption>   
                 </figure>
                 <figure>
-                    <img src="images-mode/05.jpg" alt="05">
+                    <a class="example-image-link" href="images/05.jpg" data-lightbox="example-set"><img class="example-image" src="images/05.jpg" alt="05"/></a>
                     <h3>Long Walks</h3>
                     <figcaption><p>chapeau / été / jaune</p></figcaption>
                 </figure>
                 <figure>
-                    <img src="images-mode/06.jpg" alt="06">
+                    <a class="example-image-link" href="images/06.jpg" data-lightbox="example-set"><img class="example-image" src="images/06.jpg" alt="06"/></a>
                     <h3>Twilight</h3>
                     <figcaption><p></p>chapeau / femme / été</p></figcaption>
                 </figure>
@@ -107,7 +130,16 @@
     </footer>
 </body>
 
+
 <script src="scripts/jquery-1.9.0.min.js"></script>
+<script src="scripts/jquery.nivo.slider.js"></script>
+<script src="scripts/lightbox.js"></script>
+
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+</script>
 
 <script>$('#mainMenu #burger').click (function(){
         $('#mainMenu ul').slideToggle(1000);

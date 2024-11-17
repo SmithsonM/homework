@@ -277,8 +277,34 @@ footer .promo p {
     color: #fff;
     padding: 8px 16px;
     text-transform: uppercase;
+    margin-bottom: 32px;
 }
- 
+
+/* --------------------------------Slider------------------------------- */
+
+#slider {
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.nivo-controlNav {
+    margin-bottom: 32px;
+}
+
+.nivo-caption {
+    background-color: transparent;
+    color: white;
+    top: 0%;
+    left: 0%;
+    font-size: 250%;
+    text-align: left;
+}
+
+
+
 /* --------------------media queries----------------------- */
 
 @media screen and (max-width: 567px)  {
@@ -299,7 +325,8 @@ footer .promo p {
         display: block;
         margin-left: auto;
         margin-right: auto;
-    } 
+        margin-bottom: 16px;
+    }
 
     #head #mainMenu ul {
         display: none;
@@ -349,4 +376,9 @@ footer .promo p {
         width: 40%;
         justify-content: center;
     }
+
+    #slider,
+    .nivo-controlNav {
+        display: none;
+    } 
 }

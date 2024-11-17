@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../dist/css/lightbox.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="head" class="container">
+        <div class="promo">
+            <p><strong>-20% sur les livraisons en France métropolitaine jusqu'ua 15/03 !</strong></p>
+        </div>
+
+        <div class="title">
+            <h1 class="logo">Moschino</h1>
+            <p><em>Collection été</em></p>
+        </div>
+        <div>
+            <nav id="mainMenu">
+                <i class="fa-solid fa-bars" id="burger"></i>
+                <ul>
+                    <li><a href="index.html"><strong>Home</strong></a></li>
+                    <li><a href="#"><strong>About</strong></a></li>
+                    <li><a href="#"><strong>Shop</strong></a></li>
+                    <li><a href="#"><strong>Blog</strong></a></li>
+                    <li><a href="#"><strong   class="selected">Contact</strong></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="slider-wrapper theme-default container" >
+            <div id="slider" class="nivoSlider">
+                <a href="#"><img src="images/slider1.jpg"  alt="photo 1" title="#htmlcaption1"/></a>
+                <a href="#"><img src="images/slider2.jpg"  alt="photo 2" title="#htmlcaption2"/></a>
+                <a href="#"><img src="images/slider3.jpg"  alt="photo 3" title="#htmlcaption3"/></a>
+            </div>
+            <div id="htmlcaption1" class="nivo-html-caption">
+                <h2>SUMMER TIME</h2>
+                <h3>Find the shade.</h3> 
+                <i class="fa-solid fa-hat-cowboy"></i>
+            </div>
+            <div id="htmlcaption2" class="nivo-html-caption">
+                <strong>2</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+            <div id="htmlcaption3" class="nivo-html-caption">
+                <strong>3</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+        </div>
+    </main>
+
+    <footer class="container">
+        <section class="promo">
+            <h2 class="logo">Moschino</h2>
+            <p>&#169 Moschino - copyright 2022</p>
+        </section>
+    </footer>
+</body>
+
+<script src="scripts/jquery-1.9.0.min.js"></script>
+<script src="scripts/jquery.nivo.slider.js"></script>
+
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+
+<script>$('#mainMenu #burger').click (function(){
+        $('#mainMenu ul').slideToggle(1000);
+});
+</script>
